@@ -23,9 +23,9 @@
     "@prisma/extension-accelerate": "^0.6.2"
   },
   "devDependencies": {
-    "@bigdropincs/eslint-config": "*",
-    "@bigdropincs/prettier-config": "*",
-    "@repo/tsconfig": "*",
+    "@bigdropincs/eslint-config": "^0.1.0",
+    "@bigdropincs/prettier-config": "^0.1.0",
+    "@repo/tsconfig": "workspace:*",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.56.0",
     "prettier": "^3.1.1",
