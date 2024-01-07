@@ -8,7 +8,7 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "postinstall": "prisma generate && supabase gen types typescript --local > src/supabase-types.ts",
+    "postinstall": "prisma generate",
     "clean": "rm -rf .turbo node_modules",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint .",
@@ -27,8 +27,8 @@
     "@supabase/supabase-js": "^2.39.2"
   },
   "devDependencies": {
-    "@bigdropincs/eslint-config": "^0.1.0",
-    "@bigdropincs/prettier-config": "^0.1.0",
+    "@bigdropincs/eslint-config": "latest",
+    "@bigdropincs/prettier-config": "latest",
     "@repo/tsconfig": "workspace:*",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.56.0",
