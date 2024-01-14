@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "kit",
   "private": true,
   "engines": {
     "node": ">=20.10"

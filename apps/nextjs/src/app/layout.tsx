@@ -16,13 +16,13 @@ export const metadata: Metadata = {
       ? "https://kyh.io"
       : "http://localhost:3000",
   ),
-  title: "Boilerplate.",
+  title: "Kit",
   description: "Simple monorepo with shared backend for web & mobile apps",
   openGraph: {
-    title: "Boilerplate.",
+    title: "Kit",
     description: "Simple monorepo with shared backend for web & mobile apps",
-    url: "https://github.com/kyh/boilerplate",
-    siteName: "Boilerplate.",
+    url: "https://github.com/bigdropincs/kit",
+    siteName: "Kit",
   },
   twitter: {
     card: "summary_large_image",
