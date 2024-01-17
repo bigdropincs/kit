@@ -27,8 +27,8 @@
     "@supabase/supabase-js": "^2.39.3"
   },
   "devDependencies": {
-    "@bigdropincs/eslint-config": "latest",
-    "@bigdropincs/prettier-config": "latest",
+    "@bigdropincs/eslint-config": "^0.1.4",
+    "@bigdropincs/prettier-config": "^0.1.4",
     "@repo/tsconfig": "workspace:*",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.56.0",
