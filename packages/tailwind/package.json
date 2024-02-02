@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    "./*": "./src/*.ts"
   },
   "license": "MIT",
   "scripts": {
@@ -20,9 +20,9 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@bigdropincs/eslint-config": "^0.1.4",
-    "@bigdropincs/prettier-config": "^0.1.4",
-    "@repo/tsconfig": "workspace:*",
+    "@bigdropincs/eslint-config": "^0.1.5",
+    "@bigdropincs/prettier-config": "^0.1.5",
+    "@repo/tsconfig": "^0.1.5",
     "eslint": "^8.56.0",
     "prettier": "^3.2.4",
     "typescript": "^5.3.3"
