@@ -38,12 +38,12 @@
   },
   "devDependencies": {
     "@init/tailwind-config": "workspace:latest",
-    "@bigdropincs/eslint-config": "^0.1.5",
-    "@bigdropincs/prettier-config": "^0.1.5",
-    "@repo/tsconfig": "^0.1.5",
+    "@bigdropincs/eslint-config": "^0.1.6",
+    "@bigdropincs/prettier-config": "^0.1.6",
+    "@repo/tsconfig": "^0.1.6",
     "@types/react": "^18.2.55",
     "eslint": "^8.56.0",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3",
     "zod": "^3.22.4"
