@@ -6,26 +6,28 @@ import { cn } from "@init/ui/utils";
 
 import { TRPCReactProvider } from "@/trpc/react";
 
-import "@/app/globals.css";
+import "./styles.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.VERCEL_ENV === "production"
-      ? "https://kyh.io"
+      ? "https://kit.bigdropincs.com"
       : "http://localhost:3000",
   ),
   title: "Kit",
-  description: "Simple monorepo with shared backend for web & mobile apps",
+  description:
+    "A comprehensive boilerplate to build, launch, and scale your next project",
   openGraph: {
     title: "Kit",
-    description: "Simple monorepo with shared backend for web & mobile apps",
+    description:
+      "A comprehensive boilerplate to build, launch, and scale your next project",
     url: "https://github.com/bigdropincs/kit",
     siteName: "Kit",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@kyh",
-    creator: "@kyh",
+    site: "",
+    creator: "",
   },
 };
 
