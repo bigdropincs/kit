@@ -14,7 +14,10 @@ export const metadata: Metadata = {
       ? "https://kit.bigdropincs.com"
       : "http://localhost:3000",
   ),
-  title: "Kit",
+  title: {
+    template: "%s - Kit",
+    default: "Kit",
+  },
   description:
     "A comprehensive boilerplate to build, launch, and scale your next project",
   openGraph: {
