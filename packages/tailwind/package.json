@@ -19,9 +19,9 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@bigdropincs/eslint-config": "^0.1.6",
-    "@bigdropincs/prettier-config": "^0.1.6",
-    "@repo/tsconfig": "^0.1.6",
+    "@bigdropincs/eslint-config": "^0.1.7",
+    "@bigdropincs/prettier-config": "^0.1.7",
+    "@repo/tsconfig": "^0.1.7",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5"
