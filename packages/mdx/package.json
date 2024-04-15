@@ -26,9 +26,9 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "@bigdropincs/eslint-config": "^0.1.7",
-    "@bigdropincs/prettier-config": "^0.1.7",
-    "@repo/tsconfig": "^0.1.7",
+    "@bigdropincs/eslint-config": "^0.1.8",
+    "@bigdropincs/prettier-config": "^0.1.8",
+    "@repo/tsconfig": "^0.1.8",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5"
