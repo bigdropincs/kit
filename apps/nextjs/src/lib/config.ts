@@ -8,5 +8,4 @@ export const siteConfig = {
       ? "http://localhost:3000"
       : "https://kit.bigdropincs.com",
   
-  routes: [""],
 };
