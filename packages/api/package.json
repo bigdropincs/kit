@@ -21,11 +21,12 @@
     "zod-form-data": "^2.0.2"
   },
   "devDependencies": {
-    "@bigdropincs/eslint-config": "^0.1.8",
-    "@bigdropincs/prettier-config": "^0.1.8",
-    "@repo/tsconfig": "^0.1.8",
+    "@bigdropincs/eslint-config": "^0.1.9",
+    "@bigdropincs/prettier-config": "^0.1.9",
+    "@repo/tsconfig": "^0.1.9",
     "eslint": "^8.57.0",
     "prettier": "^3.3.2",
+    "stripe": "^15.12.0",
     "typescript": "^5.5.2"
   },
   "eslintConfig": {
