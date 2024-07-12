@@ -30,14 +30,14 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@bigdropincs/eslint-config": "^0.1.9",
-    "@bigdropincs/prettier-config": "^0.1.9",
-    "@repo/tsconfig": "^0.1.9",
-    "@types/react": "^18.3.3",
-    "eslint": "^8.57.0",
-    "prettier": "^3.3.2",
+    "@bigdropincs/eslint-config": "catalog:",
+    "@bigdropincs/prettier-config": "catalog:",
+    "@repo/tsconfig": "workspace:*",
+    "@types/react": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
     "supabase": "^1.183.5",
-    "typescript": "^5.5.3"
+    "typescript": "catalog:"
   },
   "eslintConfig": {
     "root": true,
