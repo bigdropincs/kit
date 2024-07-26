@@ -12,19 +12,17 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "@tailwindcss/typography": "^0.5.13",
-    "postcss": "^8.4.40",
-    "tailwindcss": "catalog:",
-    "tailwindcss-animate": "^1.0.7"
-  },
   "devDependencies": {
     "@bigdropincs/eslint-config": "catalog:",
     "@bigdropincs/prettier-config": "catalog:",
     "@repo/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "@tailwindcss/typography": "^0.5.13",
+    "postcss": "^8.4.40",
+    "tailwindcss": "catalog:",
+    "tailwindcss-animate": "^1.0.7"
   },
   "eslintConfig": {
     "root": true,
