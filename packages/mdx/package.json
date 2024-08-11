@@ -34,10 +34,5 @@
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "eslintConfig": {
-    "extends": [
-      "@bigdropincs/eslint-config/base"
-    ]
-  },
   "prettier": "@bigdropincs/prettier-config"
 }

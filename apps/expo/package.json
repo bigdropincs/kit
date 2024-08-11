@@ -56,15 +56,5 @@
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
   },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "@bigdropincs/eslint-config/base",
-      "@bigdropincs/eslint-config/react"
-    ],
-    "ignorePatterns": [
-      "expo-plugins/**"
-    ]
-  },
   "prettier": "@bigdropincs/prettier-config"
 }

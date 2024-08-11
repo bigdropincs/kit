@@ -13,17 +13,12 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@bigdropincs/eslint-config": "^0.1.6",
-    "@bigdropincs/prettier-config": "^0.1.6",
-    "@repo/tsconfig": "^0.1.6",
+    "@bigdropincs/eslint-config": "catalog:",
+    "@bigdropincs/prettier-config": "catalog:",
+    "@repo/tsconfig": "workspace:*",
     "eslint": "catalog:",
-    "prettier": "^3.2.5",
-    "typescript": "^5.3.3"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@bigdropincs/eslint-config/base"
-    ]
+    "prettier": "catalog:",
+    "typescript": "catalog:"
   },
   "prettier": "@bigdropincs/prettier-config"
 }

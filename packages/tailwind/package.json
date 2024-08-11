@@ -24,11 +24,5 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "catalog:"
   },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "@bigdropincs/eslint-config/base"
-    ]
-  },
   "prettier": "@bigdropincs/prettier-config"
 }
