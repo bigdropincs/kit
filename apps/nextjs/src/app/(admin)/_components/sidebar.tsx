@@ -1,6 +1,6 @@
 "use client";
 
-import { createElement, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createTeamInput } from "@init/api/team/team-schema";
@@ -38,52 +38,20 @@ import {
 import { Input } from "@init/ui/input";
 import { Logo } from "@init/ui/logo";
 import { toast } from "@init/ui/toast";
-import { cn, getInitials } from "@init/ui/utils";
+import { getInitials } from "@init/ui/utils";
 import {
-  CheckCircleIcon,
-  CreditCardIcon,
-  HomeIcon,
   LayoutDashboardIcon,
   LogOutIcon,
   PlusIcon,
-  SettingsIcon,
-  UserIcon,
   Users2Icon,
-  UsersIcon,
 } from "lucide-react";
 
+import { NavLink } from "@/components/nav";
 import { api } from "@/trpc/react";
-import { NavLink } from "./nav";
 
-type PageLink = {
-  id: string;
-  href: string;
-  label: string;
-  exact?: boolean;
-  icon?: React.ReactNode;
-};
-
-const icons = {
-  home: HomeIcon,
-  accounts: Users2Icon,
-  billing: CreditCardIcon,
-  settings: SettingsIcon,
-  crud: LayoutDashboardIcon,
-  members: UsersIcon,
-};
-
-export const Sidebar = ({
-  homeLink,
-  pageLinks,
-  currentAccountSlug,
-}: {
-  homeLink: string;
-  pageLinks: PageLink[];
-  currentAccountSlug?: string;
-}) => {
+export const Sidebar = () => {
   const [{ user }] = api.auth.me.useSuspenseQuery();
-  const [teams] = api.team.getMyTeams.useSuspenseQuery();
-
+  const [{ teams }] = api.team.getMyTeams.useSuspenseQuery();
   const signOut = api.auth.signOut.useMutation();
   const [isCreateTeamDialogOpen, setIsCreateTeamDialogOpen] = useState(false);
 
@@ -91,26 +59,40 @@ export const Sidebar = ({
     await signOut.mutateAsync();
   };
 
+  const rootUrl = `/admin`;
+
+  const pageLinks = [
+    {
+      href: rootUrl,
+      label: "Home",
+      exact: true,
+      icon: LayoutDashboardIcon,
+    },
+    {
+      href: `${rootUrl}/teams`,
+      label: "Teams",
+      icon: Users2Icon,
+    },
+  ];
+
   return (
     <nav className="sticky top-0 flex h-dvh w-[80px] flex-col items-center overflow-y-auto overflow-x-hidden px-4 py-[26px]">
       <div className="flex flex-col">
         <div className="flex justify-center pb-2">
-          <NavLink href={homeLink}>
+          <NavLink href={rootUrl}>
             <Logo className="size-10 rounded-lg bg-muted text-primary" />
             <span className="sr-only">Kit</span>
           </NavLink>
         </div>
         {pageLinks.map((link) => (
           <NavLink
-            key={link.id}
+            key={link.href}
             href={link.href}
             exact={link.exact}
             className="group flex flex-col items-center gap-1 p-2 text-xs"
           >
             <span className="flex size-9 items-center justify-center rounded-lg transition group-hover:bg-secondary group-data-[state=active]:bg-secondary">
-              {createElement(icons[link.id as keyof typeof icons], {
-                className: "size-4",
-              })}
+              <link.icon className="size-4" />
             </span>
             <span>{link.label}</span>
           </NavLink>
@@ -144,7 +126,7 @@ export const Sidebar = ({
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
             <DropdownMenuItem asChild>
-              <Link href="/dashboard/settings">Settings</Link>
+              <Link href="/dashboard/profile">Profile</Link>
             </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
@@ -164,14 +146,6 @@ export const Sidebar = ({
                         </AvatarFallback>
                       </Avatar>
                       <span className="ml-2">{team.name}</span>
-                      <CheckCircleIcon
-                        className={cn(
-                          "ml-auto size-4",
-                          currentAccountSlug === team.slug
-                            ? "opacity-100"
-                            : "opacity-0",
-                        )}
-                      />
                     </Link>
                   </DropdownMenuItem>
                 ))}
@@ -211,11 +185,10 @@ const CreateTeamAccountDialog = ({
   const router = useRouter();
 
   const createTeamAccount = api.team.createTeam.useMutation({
-    onSuccess: (res) => {
-      const createdTeam = res[0];
-      if (!createdTeam) return;
+    onSuccess: ({ team }) => {
+      if (!team) return;
       toast.success("Team created successfully");
-      router.push(`/dashboard/${createdTeam.slug}`);
+      router.push(`/dashboard/${team.slug}`);
     },
     onError: () =>
       toast.error(
