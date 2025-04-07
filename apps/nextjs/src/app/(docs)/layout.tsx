@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { allDocs } from "@init/mdx/content";
-import { Logo } from "@init/ui/logo";
+import { allDocs } from "@bigdropincs/mdx/content";
+import { Logo } from "@bigdropincs/ui/logo";
 
 import { NavLink } from "@/components/nav";
 

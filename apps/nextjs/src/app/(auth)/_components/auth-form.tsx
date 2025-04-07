@@ -1,8 +1,8 @@
 "use client";
 
 import { useParams, useRouter } from "next/navigation";
-import { signInWithPasswordInput } from "@init/api/auth/auth-schema";
-import { Button } from "@init/ui/button";
+import { signInWithPasswordInput } from "@bigdropincs/api/auth/auth-schema";
+import { Button } from "@bigdropincs/ui/button";
 import {
   Form,
   FormControl,
@@ -11,13 +11,13 @@ import {
   FormLabel,
   FormMessage,
   useForm,
-} from "@init/ui/form";
-import { Input } from "@init/ui/input";
-import { toast } from "@init/ui/toast";
-import { cn } from "@init/ui/utils";
+} from "@bigdropincs/ui/form";
+import { Input } from "@bigdropincs/ui/input";
+import { toast } from "@bigdropincs/ui/toast";
+import { cn } from "@bigdropincs/ui/utils";
 import { useMutation } from "@tanstack/react-query";
 
-import type { SignInWithPasswordInput } from "@init/api/auth/auth-schema";
+import type { SignInWithPasswordInput } from "@bigdropincs/api/auth/auth-schema";
 import { useTRPC } from "@/trpc/react";
 
 type AuthFormProps = {

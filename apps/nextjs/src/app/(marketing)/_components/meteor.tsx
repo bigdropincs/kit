@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { cn } from "@init/ui/utils";
+import { cn } from "@bigdropincs/ui/utils";
 
 type MeteorsProps = {
   top?: number;

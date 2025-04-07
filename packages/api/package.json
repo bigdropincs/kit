@@ -1,5 +1,5 @@
 {
-  "name": "@init/api",
+  "name": "@bigdropincs/api",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
-    "@init/db": "workspace:^",
+    "@bigdropincs/db": "workspace:^",
     "@trpc/server": "catalog:",
     "stripe": "^17.7.0",
     "superjson": "catalog:",

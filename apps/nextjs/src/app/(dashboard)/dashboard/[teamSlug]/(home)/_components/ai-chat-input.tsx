@@ -7,14 +7,14 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { Textarea } from "@init/ui/textarea";
+import { Textarea } from "@bigdropincs/ui/textarea";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@init/ui/tooltip";
-import { cn } from "@init/ui/utils";
+} from "@bigdropincs/ui/tooltip";
+import { cn } from "@bigdropincs/ui/utils";
 
 type PromptInputContextType = {
   isLoading: boolean;

@@ -1,8 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { updateTeamInput } from "@init/api/team/team-schema";
-import { Button } from "@init/ui/button";
+import { updateTeamInput } from "@bigdropincs/api/team/team-schema";
+import { Button } from "@bigdropincs/ui/button";
 import {
   Form,
   FormControl,
@@ -11,12 +11,12 @@ import {
   FormLabel,
   FormMessage,
   useForm,
-} from "@init/ui/form";
-import { Input } from "@init/ui/input";
-import { toast } from "@init/ui/toast";
+} from "@bigdropincs/ui/form";
+import { Input } from "@bigdropincs/ui/input";
+import { toast } from "@bigdropincs/ui/toast";
 import { useMutation, useSuspenseQuery } from "@tanstack/react-query";
 
-import type { UpdateTeamInput } from "@init/api/team/team-schema";
+import type { UpdateTeamInput } from "@bigdropincs/api/team/team-schema";
 import { useTRPC } from "@/trpc/react";
 
 type TeamProfileFormProps = {

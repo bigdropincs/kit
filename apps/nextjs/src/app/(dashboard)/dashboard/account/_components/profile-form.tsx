@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { updateUserInput } from "@init/api/user/user-schema";
-import { getSupabaseBrowserClient } from "@init/db/supabase-browser-client";
-import { Button } from "@init/ui/button";
+import { updateUserInput } from "@bigdropincs/api/user/user-schema";
+import { getSupabaseBrowserClient } from "@bigdropincs/db/supabase-browser-client";
+import { Button } from "@bigdropincs/ui/button";
 import {
   Form,
   FormControl,
@@ -13,13 +13,13 @@ import {
   FormLabel,
   FormMessage,
   useForm,
-} from "@init/ui/form";
-import { Input } from "@init/ui/input";
-import { toast } from "@init/ui/toast";
+} from "@bigdropincs/ui/form";
+import { Input } from "@bigdropincs/ui/input";
+import { toast } from "@bigdropincs/ui/toast";
 import { useMutation, useSuspenseQuery } from "@tanstack/react-query";
 import { ImageIcon } from "lucide-react";
 
-import type { UpdateUserInput } from "@init/api/user/user-schema";
+import type { UpdateUserInput } from "@bigdropincs/api/user/user-schema";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { useTRPC } from "@/trpc/react";
 

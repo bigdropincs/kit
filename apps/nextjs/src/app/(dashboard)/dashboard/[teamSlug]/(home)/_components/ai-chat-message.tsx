@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "@init/ui/avatar";
-import { cn } from "@init/ui/utils";
+import { Avatar, AvatarFallback, AvatarImage } from "@bigdropincs/ui/avatar";
+import { cn } from "@bigdropincs/ui/utils";
 
 import { Markdown } from "./ai-chat-markdown";
 

@@ -28,7 +28,7 @@ const getRemotePatterns = () => {
       ];
 };
 
-const transpilePackages = ["@init/api", "@init/db", "@init/ui", "@init/mdx"];
+const transpilePackages = ["@bigdropincs/api", "@bigdropincs/db", "@bigdropincs/ui", "@bigdropincs/mdx"];
 
 /** @type {import("next").NextConfig} */
 const config = {

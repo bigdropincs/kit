@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { MDXContent } from "@init/mdx";
-import { allDocs } from "@init/mdx/content";
+import { MDXContent } from "@bigdropincs/mdx";
+import { allDocs } from "@bigdropincs/mdx/content";
 
 const homePage = "overview/introduction";
 
