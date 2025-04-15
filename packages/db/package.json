@@ -38,7 +38,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@faker-js/faker": "^9.6.0",
+    "@faker-js/faker": "^9.7.0",
     "@bigdropincs/eslint-config": "catalog:",
     "@bigdropincs/prettier-config": "catalog:",
     "@repo/tsconfig": "workspace:*",
