@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { MDXContent } from "@bigdropincs/mdx";
-import { allDocs } from "@bigdropincs/mdx/content";
+import { MDXContent } from "@repo/mdx";
+import { allDocs } from "@repo/mdx/content";
 
 type PageProps = {
   params: Promise<{

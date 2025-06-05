@@ -1,5 +1,5 @@
 {
-  "name": "@bigdropincs/expo",
+  "name": "@repo/expo",
   "version": "0.1.0",
   "private": true,
   "main": "index.ts",
@@ -46,10 +46,10 @@
     "@babel/core": "^7.27.4",
     "@babel/preset-env": "^7.27.2",
     "@babel/runtime": "^7.27.6",
-    "@bigdropincs/api": "workspace:*",
     "@bigdropincs/eslint-config": "catalog:",
     "@bigdropincs/prettier-config": "catalog:",
     "@repo/tsconfig": "workspace:*",
+    "@repo/api": "workspace:*",
     "@types/babel__core": "^7.20.5",
     "@types/react": "catalog:",
     "eslint": "catalog:",

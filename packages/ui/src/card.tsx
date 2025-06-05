@@ -1,5 +1,5 @@
 import * as React from "react";
-import { cn } from "@bigdropincs/ui/utils";
+import { cn } from "@repo/ui/utils";
 
 export const Card = ({
   className,

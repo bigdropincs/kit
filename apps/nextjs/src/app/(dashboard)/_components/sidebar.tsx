@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
-import { createTeamInput } from "@bigdropincs/api/team/team-schema";
-import { ProfileAvatar } from "@bigdropincs/ui/avatar";
-import { Button } from "@bigdropincs/ui/button";
+import { createTeamInput } from "@repo/api/team/team-schema";
+import { ProfileAvatar } from "@repo/ui/avatar";
+import { Button } from "@repo/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -12,7 +12,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@bigdropincs/ui/dialog";
+} from "@repo/ui/dialog";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -24,7 +24,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@bigdropincs/ui/dropdown-menu";
+} from "@repo/ui/dropdown-menu";
 import {
   Form,
   FormControl,
@@ -33,11 +33,11 @@ import {
   FormLabel,
   FormMessage,
   useForm,
-} from "@bigdropincs/ui/form";
-import { Input } from "@bigdropincs/ui/input";
-import { Logo } from "@bigdropincs/ui/logo";
-import { toast } from "@bigdropincs/ui/toast";
-import { cn } from "@bigdropincs/ui/utils";
+} from "@repo/ui/form";
+import { Input } from "@repo/ui/input";
+import { Logo } from "@repo/ui/logo";
+import { toast } from "@repo/ui/toast";
+import { cn } from "@repo/ui/utils";
 import { useMutation, useSuspenseQuery } from "@tanstack/react-query";
 import {
   CheckIcon,

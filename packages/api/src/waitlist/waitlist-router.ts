@@ -1,7 +1,7 @@
-import { and, asc, desc, eq, sql } from "@bigdropincs/db";
-import { waitlist } from "@bigdropincs/db/schema";
+import { and, asc, desc, eq, sql } from "@repo/db";
+import { waitlist } from "@repo/db/schema";
 
-import type { SQL } from "@bigdropincs/db";
+import type { SQL } from "@repo/db";
 import {
   createTRPCRouter,
   publicProcedure,

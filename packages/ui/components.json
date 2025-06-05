@@ -10,7 +10,7 @@
     "cssVariables": true
   },
   "aliases": {
-    "utils": "@bigdropincs/ui/utils",
+    "utils": "@repo/ui/utils",
     "components": "src/",
     "ui": "src/"
   }

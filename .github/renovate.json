@@ -3,7 +3,7 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@bigdropincs/"],
+      "matchPackagePatterns": ["^@repo/"],
       "enabled": false
     }
   ],
