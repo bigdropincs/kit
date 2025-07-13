@@ -1,6 +1,6 @@
 # Kit
 
-An AI native starter kit to build, launch, and scale your next project.
+A comprehensive boilerplate to build, launch, and scale your next project 🚀
 
 ## Stack
 
