@@ -32,14 +32,13 @@
   "dependencies": {
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.56.0",
-    "drizzle-orm": "^0.44.4",
+    "drizzle-orm": "^0.44.5",
     "next": "catalog:",
     "postgres": "^3.4.7",
     "react": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@faker-js/faker": "^9.9.0",
     "@bigdropincs/eslint-config": "catalog:",
     "@bigdropincs/prettier-config": "catalog:",
     "@repo/tsconfig": "workspace:*",
@@ -47,7 +46,7 @@
     "drizzle-kit": "^0.31.4",
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "supabase": "^2.34.3",
+    "supabase": "^2.39.2",
     "typescript": "catalog:"
   },
   "prettier": "@bigdropincs/prettier-config"
