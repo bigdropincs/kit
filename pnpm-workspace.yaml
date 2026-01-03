@@ -5,9 +5,9 @@ packages:
 catalog:
   "@better-auth/cli": ^1.4.10
   "@better-auth/expo": ^1.4.10
-  "@bigdropincs/eslint-config": ^1.1.10
-  "@bigdropincs/prettier-config": ^1.1.10
-  "@repo/tsconfig": ^1.1.10
+  "@bigdropincs/eslint-config": ^1.1.11
+  "@bigdropincs/prettier-config": ^1.1.11
+  "@repo/tsconfig": ^1.1.11
   "@tailwindcss/postcss": ^4.1.18
   "@tailwindcss/vite": ^4.1.18
   "@tanstack/react-form": ^1.27.7
