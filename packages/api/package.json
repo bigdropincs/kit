@@ -30,6 +30,7 @@
     "@bigdropincs/eslint-config": "catalog:",
     "@bigdropincs/prettier-config": "catalog:",
     "@repo/tsconfig": "workspace:*",
+    "@types/node": "catalog:",
     "@types/react": "catalog:",
     "eslint": "catalog:",
     "prettier": "catalog:",
