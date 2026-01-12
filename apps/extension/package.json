@@ -27,7 +27,7 @@
     "@bigdropincs/prettier-config": "catalog:",
     "@repo/tsconfig": "workspace:*",
     "@tailwindcss/vite": "catalog:",
-    "@types/chrome": "^0.1.32",
+    "@types/chrome": "^0.1.33",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "@vitejs/plugin-react": "catalog:",
