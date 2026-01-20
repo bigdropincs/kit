@@ -4,7 +4,7 @@ import reactConfig from "@bigdropincs/eslint-config/react";
 /** @type {import('typescript-eslint').Config} */
 export default [
   {
-    ignores: ["dist/**"],
+    ignores: ["dist/**", ".wxt/**", ".output/**"],
   },
   ...baseConfig,
   ...reactConfig,
