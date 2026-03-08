@@ -2,7 +2,7 @@ appId: com.kit.electron
 productName: Kit
 directories:
   buildResources: resources
-  output: dist
+  output: release
 files:
   - '!**/.vscode/*'
   - '!src/*'
