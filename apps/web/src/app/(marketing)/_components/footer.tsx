@@ -10,6 +10,15 @@ export const Footer = () => (
         </p>
         <div className="mt-4 grid gap-2 md:grid-cols-2">
           <ul>
+            <li>
+              <Link
+                className="text-sm text-muted-foreground transition hover:text-secondary-foreground"
+                href="https://github.com/bigdropincs/kit"
+                target="_blank"
+              >
+                Github
+              </Link>
+            </li>
           </ul>
           <ul>
             <li>

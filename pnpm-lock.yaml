@@ -12,9 +12,6 @@ catalogs:
     '@better-auth/expo':
       specifier: ^1.6.23
       version: 1.6.23
-    '@repo/tsconfig':
-      specifier: ^1.1.14
-      version: 1.1.14
     '@tailwindcss/postcss':
       specifier: ^4.3.2
       version: 4.3.2
@@ -153,8 +150,8 @@ importers:
         version: 1.4.0
     devDependencies:
       '@repo/tsconfig':
-        specifier: 'catalog:'
-        version: 1.1.14
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@tailwindcss/vite':
         specifier: 'catalog:'
         version: 4.3.2(vite@8.1.4(@types/node@26.1.1)(esbuild@0.27.7)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.0)(yaml@2.9.0))
@@ -202,7 +199,7 @@ importers:
         version: 11.18.0(@tanstack/react-query@5.101.2(react@19.2.7))(@trpc/client@11.18.0(@trpc/server@11.18.0(typescript@6.0.3))(typescript@6.0.3))(@trpc/server@11.18.0(typescript@6.0.3))(react@19.2.7)(typescript@6.0.3)
       better-auth:
         specifier: 'catalog:'
-        version: 1.6.23(49dc10827d04ce2b090f82dd3e5993d2)
+        version: 1.6.23(6bf87ae641c0f40b4e5a32decaea55d1)
       expo:
         specifier: ~57.0.4
         version: 57.0.4(@babel/core@7.29.7)(@expo/dom-webview@56.0.5)(@expo/metro-runtime@57.0.3)(expo-router@57.0.4)(react-dom@19.2.7(react@19.2.7))(react-native-worklets@0.10.2(@babel/core@7.29.7)(@react-native/metro-config@0.86.0(@babel/core@7.29.7))(react-native@0.86.0(@babel/core@7.29.7)(@react-native/metro-config@0.86.0(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.7))(react@19.2.7))(react-native@0.86.0(@babel/core@7.29.7)(@react-native/metro-config@0.86.0(@babel/core@7.29.7))(@types/react@19.2.17)(react@19.2.7))(react@19.2.7)(typescript@6.0.3)
@@ -267,12 +264,12 @@ importers:
         specifier: 'catalog:'
         version: 2.2.6
     devDependencies:
-      '@repo/tsconfig':
-        specifier: 'catalog:'
-        version: 1.1.14
       '@repo/api':
         specifier: workspace:*
         version: link:../../packages/api
+      '@repo/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.17
@@ -329,7 +326,7 @@ importers:
         version: 7.0.19(zod@4.4.3)
       better-auth:
         specifier: 'catalog:'
-        version: 1.6.23(49dc10827d04ce2b090f82dd3e5993d2)
+        version: 1.6.23(6bf87ae641c0f40b4e5a32decaea55d1)
       fumadocs-core:
         specifier: ^16.11.1
         version: 16.11.1(@mdx-js/mdx@3.1.1)(@types/estree-jsx@1.0.5)(@types/hast@3.0.5)(@types/mdast@4.0.4)(@types/react@19.2.17)(lucide-react@1.24.0(react@19.2.7))(next@16.2.10(@opentelemetry/api@1.9.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react-router@7.11.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)(zod@4.4.3)
@@ -365,8 +362,8 @@ importers:
         version: 4.4.3
     devDependencies:
       '@repo/tsconfig':
-        specifier: 'catalog:'
-        version: 1.1.14
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@tailwindcss/postcss':
         specifier: 'catalog:'
         version: 4.3.2
@@ -408,7 +405,7 @@ importers:
         version: 11.18.0(typescript@6.0.3)
       better-auth:
         specifier: 'catalog:'
-        version: 1.6.23(49dc10827d04ce2b090f82dd3e5993d2)
+        version: 1.6.23(6bf87ae641c0f40b4e5a32decaea55d1)
       next:
         specifier: 'catalog:'
         version: 16.2.10(@babel/core@7.29.7)(@opentelemetry/api@1.9.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -426,8 +423,8 @@ importers:
         version: 4.4.3
     devDependencies:
       '@repo/tsconfig':
-        specifier: 'catalog:'
-        version: 1.1.14
+        specifier: workspace:*
+        version: link:../tsconfig
       '@types/node':
         specifier: 'catalog:'
         version: 26.1.1
@@ -454,8 +451,8 @@ importers:
         version: 4.4.3
     devDependencies:
       '@repo/tsconfig':
-        specifier: 'catalog:'
-        version: 1.1.14
+        specifier: workspace:*
+        version: link:../tsconfig
       '@types/node':
         specifier: 'catalog:'
         version: 26.1.1
@@ -468,6 +465,8 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
+
+  packages/tsconfig: {}
 
   packages/ui:
     dependencies:
@@ -533,8 +532,8 @@ importers:
         version: 1.1.6(react@19.2.7)
     devDependencies:
       '@repo/tsconfig':
-        specifier: 'catalog:'
-        version: 1.1.14
+        specifier: workspace:*
+        version: link:../tsconfig
       '@tailwindcss/postcss':
         specifier: 'catalog:'
         version: 4.3.2
@@ -2378,9 +2377,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
-
-  '@repo/tsconfig@1.1.14':
-    resolution: {integrity: sha512-Bn14z3WTnvIld5j9GYbHuoWyxGPKxF4U+OC+jfQvFruZZyJZOK435xIz7MmvsprrqBUn+6I2DYOS6vyN5k5iXA==}
 
   '@malept/cross-spawn-promise@2.0.0':
     resolution: {integrity: sha512-1DpKU0Z5ThltBwjNySMC14g0CkbyhCaz9FkhxqNsZI6uAPJXFS8cMXlBKo26FJ8ZuW6S9GCMcR9IO5k2X5/9Fg==}
@@ -10613,7 +10609,7 @@ snapshots:
     dependencies:
       '@better-auth/core': 1.6.23(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(@opentelemetry/api@1.9.1)(better-call@1.3.7(zod@4.4.3))(jose@6.2.3)(kysely@0.29.3)(nanostores@1.4.0)
       '@better-fetch/fetch': 1.3.1
-      better-auth: 1.6.23(49dc10827d04ce2b090f82dd3e5993d2)
+      better-auth: 1.6.23(6bf87ae641c0f40b4e5a32decaea55d1)
       better-call: 1.3.7(zod@4.4.3)
       zod: 4.4.3
     optionalDependencies:
@@ -10652,7 +10648,7 @@ snapshots:
   '@better-auth/stripe@1.6.23(@better-auth/core@1.6.23(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(@opentelemetry/api@1.9.1)(better-call@1.3.7(zod@4.4.3))(jose@6.2.3)(kysely@0.29.3)(nanostores@1.4.0))(better-auth@1.6.23(6bf87ae641c0f40b4e5a32decaea55d1))(better-call@1.3.7(zod@4.4.3))(stripe@22.3.1(@types/node@26.1.1))':
     dependencies:
       '@better-auth/core': 1.6.23(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(@opentelemetry/api@1.9.1)(better-call@1.3.7(zod@4.4.3))(jose@6.2.3)(kysely@0.29.3)(nanostores@1.4.0)
-      better-auth: 1.6.23(49dc10827d04ce2b090f82dd3e5993d2)
+      better-auth: 1.6.23(6bf87ae641c0f40b4e5a32decaea55d1)
       better-call: 1.3.7(zod@4.4.3)
       defu: 6.1.7
       stripe: 22.3.1(@types/node@26.1.1)
@@ -11518,7 +11514,9 @@ snapshots:
       metro-transform-plugins: 0.84.4
       metro-transform-worker: 0.84.4
     transitivePeerDependencies:
+      - bufferutil
       - supports-color
+      - utf-8-validate
 
   '@expo/osascript@2.7.0':
     dependencies:
@@ -11852,8 +11850,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
-
-  '@repo/tsconfig@1.1.14': {}
 
   '@malept/cross-spawn-promise@2.0.0':
     dependencies:
@@ -13902,7 +13898,7 @@ snapshots:
 
   baseline-browser-mapping@2.10.42: {}
 
-  better-auth@1.6.23(49dc10827d04ce2b090f82dd3e5993d2):
+  better-auth@1.6.23(6bf87ae641c0f40b4e5a32decaea55d1):
     dependencies:
       '@better-auth/core': 1.6.23(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(@opentelemetry/api@1.9.1)(better-call@1.3.7(zod@4.4.3))(jose@6.2.3)(kysely@0.29.3)(nanostores@1.4.0)
       '@better-auth/drizzle-adapter': 1.6.23(@better-auth/core@1.6.23(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(@opentelemetry/api@1.9.1)(better-call@1.3.7(zod@4.4.3))(jose@6.2.3)(kysely@0.29.3)(nanostores@1.4.0))(@better-auth/utils@0.4.2)(drizzle-orm@0.45.2(@electric-sql/pglite@0.3.15)(@opentelemetry/api@1.9.1)(@prisma/client@7.4.2(prisma@7.4.2(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3))(typescript@6.0.3))(kysely@0.29.3)(mysql2@3.15.3)(postgres@3.4.9)(prisma@7.4.2(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)))
