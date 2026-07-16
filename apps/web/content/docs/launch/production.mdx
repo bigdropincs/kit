@@ -8,7 +8,7 @@ What to verify before real users arrive. [Deployment](/docs/launch/deployment) g
 
 Kit ships with the author's defaults baked in. Change these before launch:
 
-- **`apps/web/src/lib/site-config.ts`** - name, description, production URL, Twitter handle. `siteConfig.url` feeds metadata, sitemap, robots, and `llms.txt`
+- **`apps/web/src/lib/site-config.ts`** - name, description, production URL. `siteConfig.url` feeds metadata, sitemap, robots, and `llms.txt`
 - **`packages/api/src/auth/auth.ts`** - `oAuthProxy` derives `productionURL` from `VERCEL_PROJECT_PRODUCTION_URL`; deploying off Vercel means setting that env var (or replacing the derivation)
 - **`apps/web/src/app/(docs)/docs/layout.tsx`** - `githubUrl` points at the upstream repo
 - **`public/og.jpg`** - the OpenGraph image referenced in `src/app/layout.tsx`

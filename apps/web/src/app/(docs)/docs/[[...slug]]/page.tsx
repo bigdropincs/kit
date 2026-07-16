@@ -50,8 +50,8 @@ export async function generateMetadata(props: {
     alternates: {
       canonical: page.url,
     },
-    // openGraph/twitter don't field-merge with the root layout's — without
-    // these, shared docs links fall back to the generic site title.
+    // openGraph doesn't field-merge with the root layout's — without these,
+    // shared docs links fall back to the generic site title.
     openGraph: {
       type: "article",
       url: page.url,
@@ -59,13 +59,6 @@ export async function generateMetadata(props: {
       description: page.data.description,
       siteName: siteConfig.name,
       images: [{ url: siteConfig.ogImage, width: 1200, height: 630 }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: page.data.title,
-      description: page.data.description,
-      images: [{ url: siteConfig.ogImage, width: 1200, height: 630 }],
-      creator: siteConfig.twitter,
     },
   };
 }
